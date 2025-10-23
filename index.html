@@ -56,6 +56,16 @@
   <section>
     <h2>Projects</h2>
 
+    <h3>🍦 Ice Cream Cone App</h3>
+    <p>This SwiftUI project demonstrates how state management and view composition can be combined to create an interactive and visually engaging interface. The goal of the app was to simulate building an ice cream cone by stacking colorful scoops on top of a cone.</p>
+    <img src="scoopgame.png" alt="Ice Cream Cone App Screenshot" />
+
+    <p><strong>Reflection on the Ice Cream Cone App</strong></p>
+    <p>The main learning outcome was understanding how @State variables control dynamic changes in the UI. The numberOfScoops state determines how many scoops are displayed, and SwiftUI automatically re-renders the view when this value changes. This reactive design pattern makes SwiftUI efficient and intuitive compared to manually updating the UI.</p>
+    <p>The use of ForEach enabled the app to dynamically generate multiple scoop layers, each assigned a unique color from a predefined array. The ZStack and VStack combinations allowed for layered and vertical stacking, which made it simple to position scoops correctly above the cone.</p>
+    <p>Additionally, I explored animation in SwiftUI using the <code>.animation(.spring())</code> modifier to create smooth transitions when adding or resetting scoops. This subtle motion gives the interface a more playful and polished feel.</p>
+    <p>Through this project, I also learned the importance of layout alignment and offset adjustments, which were essential to visually balance the scoops on the cone. Furthermore, handling the “overflow” condition — where too many scoops reset the count — introduced a simple but effective example of conditional logic and user feedback.</p>
+
     <h3>🕒 Swift Clock App</h3>
     <p>This SwiftUI project creates a real-time analog clock where you can manually adjust the hour and minute hands. The background color changes based on AM or PM, making it both functional and visually dynamic.</p>
     <img src="Clockapp.png" alt="Swift Clock Project Screenshot"/>
@@ -66,56 +76,30 @@
 
     <h3>🧮 Calculator App</h3>
     <p>A simple and clean calculator app created with SwiftUI. It performs basic arithmetic operations like addition, subtraction, multiplication, and division with an elegant interface.</p>
-    <!-- Hesap makinesi görselini buraya ekle -->
     <img src="calculator.png" alt="Calculator App Screenshot" />
-    <p>How did Pair Programming help you complete this task?
-Pair Programming helped us work more efficiently because we could focus on different parts of the task at the same time. The driver wrote the Swift code while the navigator checked for mistakes and suggested better ways to write it. It made finding errors faster and helped us learn from each other.
 
-What is the purpose of your program?
-The purpose of the program is to perform basic math operations such as addition, subtraction, multiplication, division, and modulo based on the user’s choice. It allows the user to do calculations repeatedly until they decide to quit.
-
-Which steps did you follow when designing your program?
-First, we planned the structure of the program and listed the operations we needed. Then we created a menu and added user input for the operation and numbers. After that, we used a switch statement to perform the right calculation, added error checks for dividing or taking modulo by zero, and finally tested the program.
-
-Which errors did you encounter, and how did you fix them?
-At first, the program didn’t handle division by zero correctly and caused a runtime error. We fixed it by adding an if statement that checks if the second number is zero before dividing. We also fixed small syntax mistakes, like missing parentheses, during testing.</p>
+    <p><strong>Calculator Reflection</strong></p>
+    <p>Swift Calc-Calc Calculator — This assignment was one of the first projects we did, and it was pretty simple to understand. The program takes two numbers from the user and then performs basic operations like addition, subtraction, multiplication, and division. Once the numbers are entered, the calculator instantly shows the results using the logic built into the code. Even though it wasn’t too challenging, it was a fun and satisfying task that helped me get comfortable with Swift and basic user input.</p>
 
     <h3>❌⭕ Tic Tac Toe (XOX) Game</h3>
     <p>This SwiftUI game allows two players to play the classic Tic Tac Toe (XOX) game. It includes win detection, a reset button, and a modern, colorful design.</p>
-    <!-- XOX oyunu görselini buraya ekle -->
     <img src="xoxgame.png" alt="Tic Tac Toe Project Screenshot" />
+
     <h3>Scratch XOX Game</h3>
-    <p>This scratch games allow to play XOX also known as tic tac toe</p>
+    <p>This scratch game allows users to play XOX (tic tac toe) made with Scratch visual coding.</p>
     <img src="XOXcodeimage.png" alt="Tic Tac Toe Scratch Project" />
+
     <h3>Compression Reflection</h3>
-    <p>Data Compression
-
-1. Why is data compressed and what algorithms are used?
-Data is compressed to reduce file size and save storage or bandwidth. Many files contain repeating information that doesn’t need to be stored multiple times. Compression algorithms find and simplify those patterns. Lossless compression keeps every bit of data exactly the same after decompression, while Lossy compression removes details that aren’t easily noticed. Common algorithms include Huffman Coding, Run-Length Encoding, and Lempel-Ziv (used in ZIP files).
-
-2. Is compression the same for videos, photos, and text?
-The main goal—removing unnecessary or repetitive data—is the same, but the techniques differ. Text files require lossless compression since every character matters. On the other hand, videos, photos, and audio files can use lossy compression, because small details that the human eye or ear can’t detect can be removed safely.
-
-3. What programs perform compression (online or installed)?
-There are both web-based and desktop tools. Online tools like TinyPNG or ILovePDF compress files directly in the browser. Installed programs such as WinRAR, 7-Zip, or Adobe Acrobat perform compression locally on your computer.
-
-4. Examples of compression in pictures, videos, text, and PDFs
-Image compression removes subtle color differences or merges similar shades. Video compression saves space by recording only the changes between frames instead of every single frame. Text compression often replaces repeating words or patterns with shorter symbols. PDF compression minimizes image resolution and removes extra embedded data like unused fonts.
-
-5. Common compressed formats
-
-Video: MP4, AVI, MOV
-
-Image: JPEG, PNG, GIF, WebP
-
-Audio: MP3, AAC, FLAC
-
-Text/Documents: TXT, DOCX, PDF, ZIP</p>
-
-    <h3>Calculator Reflection</h3>
-    <p>Swift Calc-Calc Calculator
-This assignment was one of the first projects we did, and it was pretty simple to understand. The program takes two numbers from the user and then performs basic operations like addition, subtraction, multiplication, 
-and division. Once the numbers are entered, the calculator instantly shows the results using the logic built into the code. Even though it wasn’t too challenging, it was a fun and satisfying task that helped me get comfortable with Swift and basic user input.</p>
+    <p><strong>Data Compression</strong></p>
+    <p>1. <b>Why is data compressed and what algorithms are used?</b><br>Data is compressed to reduce file size and save storage or bandwidth. Many files contain repeating information that doesn’t need to be stored multiple times. Compression algorithms find and simplify those patterns. Lossless compression keeps every bit of data exactly the same after decompression, while Lossy compression removes details that aren’t easily noticed. Common algorithms include Huffman Coding, Run-Length Encoding, and Lempel-Ziv (used in ZIP files).</p>
+    <p>2. <b>Is compression the same for videos, photos, and text?</b><br>The main goal—removing unnecessary or repetitive data—is the same, but the techniques differ. Text files require lossless compression since every character matters. On the other hand, videos, photos, and audio files can use lossy compression, because small details that the human eye or ear can’t detect can be removed safely.</p>
+    <p>3. <b>What programs perform compression (online or installed)?</b><br>There are both web-based and desktop tools. Online tools like TinyPNG or ILovePDF compress files directly in the browser. Installed programs such as WinRAR, 7-Zip, or Adobe Acrobat perform compression locally on your computer.</p>
+    <p>4. <b>Examples of compression in pictures, videos, text, and PDFs:</b><br>Image compression removes subtle color differences or merges similar shades. Video compression saves space by recording only the changes between frames instead of every single frame. Text compression often replaces repeating words or patterns with shorter symbols. PDF compression minimizes image resolution and removes extra embedded data like unused fonts.</p>
+    <p>5. <b>Common compressed formats:</b><br>
+    Video: MP4, AVI, MOV<br>
+    Image: JPEG, PNG, GIF, WebP<br>
+    Audio: MP3, AAC, FLAC<br>
+    Text/Documents: TXT, DOCX, PDF, ZIP</p>
 
     <p>Check out my work on GitHub:</p>
     <ul style="list-style: none; padding: 0;">
