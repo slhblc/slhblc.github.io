@@ -1,0 +1,23 @@
+Data Compression
+
+1. Why is data compressed and what algorithms are used?
+Data is compressed to reduce file size and save storage or bandwidth. Many files contain repeating information that doesn’t need to be stored multiple times. Compression algorithms find and simplify those patterns. Lossless compression keeps every bit of data exactly the same after decompression, while Lossy compression removes details that aren’t easily noticed. Common algorithms include Huffman Coding, Run-Length Encoding, and Lempel-Ziv (used in ZIP files).
+
+2. Is compression the same for videos, photos, and text?
+The main goal—removing unnecessary or repetitive data—is the same, but the techniques differ. Text files require lossless compression since every character matters. On the other hand, videos, photos, and audio files can use lossy compression, because small details that the human eye or ear can’t detect can be removed safely.
+
+3. What programs perform compression (online or installed)?
+There are both web-based and desktop tools. Online tools like TinyPNG or ILovePDF compress files directly in the browser. Installed programs such as WinRAR, 7-Zip, or Adobe Acrobat perform compression locally on your computer.
+
+4. Examples of compression in pictures, videos, text, and PDFs
+Image compression removes subtle color differences or merges similar shades. Video compression saves space by recording only the changes between frames instead of every single frame. Text compression often replaces repeating words or patterns with shorter symbols. PDF compression minimizes image resolution and removes extra embedded data like unused fonts.
+
+5. Common compressed formats
+
+Video: MP4, AVI, MOV
+
+Image: JPEG, PNG, GIF, WebP
+
+Audio: MP3, AAC, FLAC
+
+Text/Documents: TXT, DOCX, PDF, ZIP
