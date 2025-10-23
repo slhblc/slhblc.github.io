@@ -1,0 +1,11 @@
+How did Pair Programming help you complete this task?
+Pair Programming helped us work more efficiently because we could focus on different parts of the task at the same time. The driver wrote the Swift code while the navigator checked for mistakes and suggested better ways to write it. It made finding errors faster and helped us learn from each other.
+
+What is the purpose of your program?
+The purpose of the program is to perform basic math operations such as addition, subtraction, multiplication, division, and modulo based on the user’s choice. It allows the user to do calculations repeatedly until they decide to quit.
+
+Which steps did you follow when designing your program?
+First, we planned the structure of the program and listed the operations we needed. Then we created a menu and added user input for the operation and numbers. After that, we used a switch statement to perform the right calculation, added error checks for dividing or taking modulo by zero, and finally tested the program.
+
+Which errors did you encounter, and how did you fix them?
+At first, the program didn’t handle division by zero correctly and caused a runtime error. We fixed it by adding an if statement that checks if the second number is zero before dividing. We also fixed small syntax mistakes, like missing parentheses, during testing.
