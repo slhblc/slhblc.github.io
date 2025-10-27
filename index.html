@@ -7,16 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
     }
+
     header {
       background: black;
       color: white;
-      padding: 2rem 0;
+      text-align: center;
+      padding: 2rem 0 1rem;
+      position: relative;
     }
+
+    nav {
+      background: #222;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: lightblue;
+    }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
@@ -25,6 +60,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+
     img {
       max-width: 90%;
       height: auto;
@@ -32,13 +68,19 @@
       margin-top: 1rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
+
     a {
       color: black;
       text-decoration: none;
       font-weight: bold;
     }
+
     a:hover {
       color: darkblue;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -48,12 +90,21 @@
     <p>Welcome to my portfolio website!</p>
   </header>
 
-  <section>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#compression">Compression</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>I’m a student who loves coding, tech, and learning new things. I especially enjoy working on SwiftUI projects and experimenting with creative app designs.</p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
 
     <h3>🍦 Ice Cream Cone App</h3>
@@ -88,7 +139,9 @@
     <h3>Scratch XOX Game</h3>
     <p>This scratch game allows users to play XOX (tic tac toe) made with Scratch visual coding.</p>
     <img src="XOXcodeimage.png" alt="Tic Tac Toe Scratch Project" />
+  </section>
 
+  <section id="compression">
     <h3>Compression Reflection</h3>
     <p><strong>Data Compression</strong></p>
     <p>1. <b>Why is data compressed and what algorithms are used?</b><br>Data is compressed to reduce file size and save storage or bandwidth. Many files contain repeating information that doesn’t need to be stored multiple times. Compression algorithms find and simplify those patterns. Lossless compression keeps every bit of data exactly the same after decompression, while Lossy compression removes details that aren’t easily noticed. Common algorithms include Huffman Coding, Run-Length Encoding, and Lempel-Ziv (used in ZIP files).</p>
@@ -110,7 +163,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: salih.bolac@hisarschool.k12.tr</p>
   </section>
