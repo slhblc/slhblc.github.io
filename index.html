@@ -183,6 +183,40 @@ struct ContentView: View {
     Using a dynamic structure like an array makes the app flexible and easier to expand in the future.
   </p>
 </section>
+  <section id="swiftui-list">
+  <h2>SwiftUI – City List Example</h2>
+
+  <p>
+    This SwiftUI example demonstrates how an array can be displayed on the screen
+    using <code>ForEach</code>. Each city name stored in the array is rendered as
+    a separate text element inside a vertical layout.
+  </p>
+
+  <pre><code>import SwiftUI
+
+struct ContentView: View {
+    
+    let cities = ["London","Istanbul","Warsaw","Moscow"]
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Clock/List")
+                .font(.title2)
+            ForEach(cities, id: \.self) { city in
+                Text(city)
+            }
+        }
+    }
+}
+</code></pre>
+
+  <p>
+    The <code>VStack</code> is used to stack elements vertically, while
+    <code>ForEach</code> dynamically creates a <code>Text</code> view for each city.
+    This structure allows the interface to automatically update if the array changes.
+  </p>
+</section>
+
 
 
   <section id="compression">
